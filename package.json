@@ -1,0 +1,26 @@
+{
+  "name": "static-site-generator",
+  "version": "1.0.0",
+  "description": "static site generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazunori-Kimura/static-site-generator.git"
+  },
+  "keywords": [],
+  "author": "Kazunori Kimura <kazunori.kimura.js@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kazunori-Kimura/static-site-generator/issues"
+  },
+  "homepage": "https://github.com/Kazunori-Kimura/static-site-generator#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "glob": "^6.0.3",
+    "marked": "^0.3.5",
+    "mkdirp": "^0.5.1"
+  }
+}
