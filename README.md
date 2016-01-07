@@ -5,14 +5,14 @@ static site generator
 ## コマンド
 
 * ssgen init <site_name>
-* ssgen generate
+* ssgen generate [--debug]
 
 ## フォルダ構成
 
 * <site_name>
   - pages
   - themes
-  - config.json
+  - config.yml
   - public
 
 ## 機能概要
@@ -26,3 +26,25 @@ static site generator
 
 * themes/source 以下の js, cssなどのフォルダ・ファイルは
   そのまま public 直下にコピーされます。
+
+* 変換結果を <site_name>/cache.json に残す
+  sha256の値を保持
+  cacheの値と異なればファイルを生成
+
+```js
+{
+  config: "xxx",
+  pages: {
+    filepath: "xxx", ...
+  },
+  theme: {
+    filepath: "xxx", ...
+  }
+}
+```
+
+## memo
+
+* [fs-extra](http://qiita.com/okaxaki/items/981633485594baf622b0) を使う
+* [js-yaml](https://github.com/nodeca/js-yaml) を使う
+  - [使い方](http://dev.classmethod.jp/client-side/javascript/node-yaml/)
