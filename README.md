@@ -48,3 +48,5 @@ static site generator
 * [fs-extra](http://qiita.com/okaxaki/items/981633485594baf622b0) を使う
 * [js-yaml](https://github.com/nodeca/js-yaml) を使う
   - [使い方](http://dev.classmethod.jp/client-side/javascript/node-yaml/)
+
+* http-serverを使う

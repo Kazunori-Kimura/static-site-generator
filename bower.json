@@ -1,0 +1,29 @@
+{
+  "name": "static-site-generator",
+  "description": "static site generator",
+  "main": "index.js",
+  "authors": [
+    "Kazunori Kimura <kazunori.kimura.js@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "static",
+    "generator",
+    "markdown",
+    "html"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Honoka": "~3.3.6"
+  }
+}
