@@ -1,5 +1,5 @@
 "use strict";
-const SiteGen = require("./lib/sitegen");
+const Staticium = require("./lib/staticium");
 
-const gen = new SiteGen();
-gen.test();
+const staticium = new Staticium();
+staticium.test();

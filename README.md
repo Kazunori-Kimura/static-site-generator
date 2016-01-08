@@ -1,4 +1,4 @@
-# static-site-generator
+# staticium
 
 static site generator
 
@@ -12,8 +12,12 @@ static site generator
 * <site_name>
   - pages
   - themes
+  - public \*
+  - temporary \*
   - config.yml
-  - public
+  - cache.json \*
+
+\* は `generate` 時に自動生成
 
 ## 機能概要
 
