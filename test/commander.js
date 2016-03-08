@@ -1,9 +1,7 @@
 "use strict";
 const com = require("commander");
-const Staticium = require("./lib/staticium");
-const pck = require("./package.json");
 
-com.version(pck.version);
+com.version("1.0.0");
 
 // init
 com
@@ -28,21 +26,6 @@ com
     site_path = site_path || __dirname;
 
     console.log(site_path);
-  });
-
-// test
-com
-  .command("test")
-  .alias("t")
-  .description("test")
-  .option("-d, --debug", "debug mode.")
-  .action((options) => {
-    // --- test code ---
-    const path = require("path");
-    const site_path = path.resolve(__dirname, "./test/sample-site");
-
-    const staticium = new Staticium();
-    staticium.test_load(site_path);
   });
 
 com.parse(process.argv);

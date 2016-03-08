@@ -4,8 +4,9 @@ static site generator
 
 ## コマンド
 
-* ssgen init <site_name>
-* ssgen generate [--debug]
+* sttc init <site_name>
+* sttc generate [--debug]
+* sttc server
 
 ## フォルダ構成
 
@@ -47,10 +48,15 @@ static site generator
 }
 ```
 
+* [NeDB](https://github.com/louischatriot/nedb) を使ってデータベースに保持する
+  - タグ別のページとか作れるのでは
+
 ## memo
 
 * [fs-extra](http://qiita.com/okaxaki/items/981633485594baf622b0) を使う
+  - fs-extra-promise にした
 * [js-yaml](https://github.com/nodeca/js-yaml) を使う
   - [使い方](http://dev.classmethod.jp/client-side/javascript/node-yaml/)
+  - yaml-front-matter にした
 
 * http-serverを使う
