@@ -42,7 +42,8 @@ com
     const site_path = path.resolve(__dirname, "./test/sample-site");
 
     const staticium = new Staticium();
-    staticium.test_load(site_path);
+    //staticium.test_load(site_path);
+    staticium.test();
   });
 
 com.parse(process.argv);

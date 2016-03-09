@@ -3,3 +3,4 @@ title: staticium
 subtitle: static site generator
 description:
 author: Kazunori Kimura
+theme: default
